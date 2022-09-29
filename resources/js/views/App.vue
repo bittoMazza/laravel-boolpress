@@ -1,12 +1,14 @@
 <template>
     <div>
-        <HomePage :posts="posts" :tags="tags"/>
+        <HeaderComponent/>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
 import Axios from 'axios';
 import HomePage from '../pages/HomePage.vue'
+import HeaderComponent  from '../components/HeaderComponent.vue';
 
 export default {
     name: "App",
@@ -19,6 +21,7 @@ export default {
     },
     components:{
         HomePage,
+        HeaderComponent,
     },
     methods:{
         getPosts(postsPage = 1){
