@@ -2062,7 +2062,7 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   created: function created() {
-    setInterval(this.getPosts(), 3000);
+    setTimeout(this.getPosts, 1500);
     this.getTags();
   }
 });

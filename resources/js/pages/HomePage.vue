@@ -62,7 +62,7 @@ export default {
         }
     },
     created(){
-         setInterval(this.getPosts(),3000);
+        setTimeout(this.getPosts,1500);
         this.getTags();
     }
 }
