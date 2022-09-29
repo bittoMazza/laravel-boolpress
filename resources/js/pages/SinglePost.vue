@@ -21,6 +21,7 @@ export default {
     methods:{
         getPost(){
             const id = this.$route.params.id;
+            /* Facciamo una chiamata al metodo show dell'api*/
             Axios.get(`/api/posts/${id}`,{
             }).then((response) => {
                 console.log(response.data.results);

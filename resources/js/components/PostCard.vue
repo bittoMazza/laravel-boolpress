@@ -13,16 +13,15 @@ export default {
     },
 
     methods:{
-      isValidUrl(url){
-      try {
-        new URL(url);
-      } catch (e) {
-        console.error(e);
+      isValidUrl(str) {
+      var regex = /(?:https?):\/\/(\w+:?\w*)?(\S+)(:\d+)?(\/|\/([\w#!:.?+=&%!\-\/]))?/;
+      if(!regex .test(str)) {
         return false;
+      } else {
+        return true;
       }
-      return true;
-  },
-}
+   }
+ }
 }
 </script>
 
