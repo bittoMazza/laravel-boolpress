@@ -2158,16 +2158,19 @@ var render = function render() {
   }, [_c("ul", {
     staticClass: "d-flex justify-content-center"
   }, [_c("li", [_c("router-link", {
+    staticClass: "route-link",
     attrs: {
       to: "/about"
     }
-  }, [_vm._v("Vai a About")])], 1), _vm._v(" "), _c("li", {
+  }, [_vm._v("About")])], 1), _vm._v(" "), _c("li", {
     staticClass: "mx-2"
   }, [_c("router-link", {
+    staticClass: "route-link",
     attrs: {
       to: "/home"
     }
   }, [_vm._v("Home")])], 1), _vm._v(" "), _c("li", [_c("router-link", {
+    staticClass: "route-link",
     attrs: {
       to: "/contacts"
     }
@@ -2473,7 +2476,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "body[data-v-8aebcde8] {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  background: #000;\n}\n.middle[data-v-8aebcde8] {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  position: absolute;\n}\n.bar[data-v-8aebcde8] {\n  width: 10px;\n  height: 70px;\n  background: #fff;\n  display: inline-block;\n  transform-origin: bottom center;\n  border-top-right-radius: 20px;\n  border-top-left-radius: 20px;\n  /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */\n  -webkit-animation: loader-8aebcde8 1.2s linear infinite;\n          animation: loader-8aebcde8 1.2s linear infinite;\n}\n.bar1[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.1s;\n          animation-delay: 0.1s;\n}\n.bar2[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.bar3[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.bar4[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.bar5[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.bar6[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.bar7[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.bar8[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n@-webkit-keyframes loader-8aebcde8 {\n0% {\n    transform: scaleY(0.1);\n}\n50% {\n    transform: scaleY(1);\n    background: yellowgreen;\n}\n100% {\n    transform: scaleY(0.1);\n    background: transparent;\n}\n}\n@keyframes loader-8aebcde8 {\n0% {\n    transform: scaleY(0.1);\n}\n50% {\n    transform: scaleY(1);\n    background: yellowgreen;\n}\n100% {\n    transform: scaleY(0.1);\n    background: transparent;\n}\n}", ""]);
+exports.push([module.i, "body[data-v-8aebcde8] {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  background: #000;\n}\n.middle[data-v-8aebcde8] {\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  position: absolute;\n}\n.bar[data-v-8aebcde8] {\n  width: 10px;\n  height: 70px;\n  background: #fff;\n  display: inline-block;\n  transform-origin: bottom center;\n  border-top-right-radius: 20px;\n  border-top-left-radius: 20px;\n  /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */\n  -webkit-animation: loader-8aebcde8 1.2s linear infinite;\n          animation: loader-8aebcde8 1.2s linear infinite;\n}\n.bar1[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.1s;\n          animation-delay: 0.1s;\n}\n.bar2[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.2s;\n          animation-delay: 0.2s;\n}\n.bar3[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.3s;\n          animation-delay: 0.3s;\n}\n.bar4[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.4s;\n          animation-delay: 0.4s;\n}\n.bar5[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.5s;\n          animation-delay: 0.5s;\n}\n.bar6[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.6s;\n          animation-delay: 0.6s;\n}\n.bar7[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.7s;\n          animation-delay: 0.7s;\n}\n.bar8[data-v-8aebcde8] {\n  -webkit-animation-delay: 0.8s;\n          animation-delay: 0.8s;\n}\n@-webkit-keyframes loader-8aebcde8 {\n0% {\n    transform: scaleY(0.1);\n}\n50% {\n    transform: scaleY(1);\n    background: rgb(47, 47, 155);\n}\n100% {\n    transform: scaleY(0.1);\n    background: transparent;\n}\n}\n@keyframes loader-8aebcde8 {\n0% {\n    transform: scaleY(0.1);\n}\n50% {\n    transform: scaleY(1);\n    background: rgb(47, 47, 155);\n}\n100% {\n    transform: scaleY(0.1);\n    background: transparent;\n}\n}", ""]);
 
 // exports
 
@@ -2492,7 +2495,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nnav ul li[data-v-153bfd55]{\n   list-style: none;\n   font-size: 18px;\n}\nul[data-v-153bfd55]{\n   padding: 0;\n   margin: 0;\n}\n\n\n", ""]);
+exports.push([module.i, "\nnav ul li[data-v-153bfd55]{\n   list-style: none;\n}\nul[data-v-153bfd55]{\n   padding: 0;\n   margin: 0;\n}\n.route-link[data-v-153bfd55]{\n   color: black;\n   text-decoration: none;\n   font-size: 20px;\n   font-weight: bold;\n}\n\n", ""]);
 
 // exports
 

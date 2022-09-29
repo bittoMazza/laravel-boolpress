@@ -72,7 +72,7 @@ body {
   }
   50% {
     transform: scaleY(1);
-    background: yellowgreen;
+    background: rgb(47, 47, 155);
   }
   100% {
     transform: scaleY(0.1);
