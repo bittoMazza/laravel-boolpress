@@ -27,11 +27,11 @@ const router = new VueRouter({
             name: 'about',
             component: AboutPage
         }, 
-       /*  {
-            path: '/',
-            name: 'home',
-            component: HomePage
-        }, */
+         {
+            path: '/posts/:id',
+            name: 'posts.show',
+            component: SinglePost
+        }, 
     ]
 })
 export default router

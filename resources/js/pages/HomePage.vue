@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h3 class="text-center py-4"> Tutti i post </h3>
-    <div class="d-flex justify-content-center flex-wrap">
+    <div class="d-flex  justify-content-center flex-wrap">
         <PostCard v-for="post in posts" :key="post.id" :post="post"/>
     </div>
 

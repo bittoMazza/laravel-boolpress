@@ -1,7 +1,7 @@
 <template>
-  <div class="col-3">
+  <div class="col-3 post-card">
     <img  class="img-fluid" :src="isValidUrl(post.thumb) ? post.thumb : 'storage/' + post.thumb" alt="">
-    <h3>{{ post.title }}</h3>
+    <router-link :to="'/posts/'+ post.id">{{ post.title }}</router-link>
   </div>
 </template>
 
@@ -26,6 +26,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.post-card{
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+} 
 </style>
