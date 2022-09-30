@@ -7,8 +7,9 @@ Vue.use(VueRouter)
 
 import AboutPage from './pages/AboutPage';
 import ContactsPage from './pages/ContactsPage';
-import HomePage from './pages/HomePage';
+import PostsHomepage from './pages/PostsHomepage';
 import SinglePost from './pages/SinglePost';
+import TagsPostsPage from './pages/TagsPostsPage';
 
 const router = new VueRouter({
     mode:'history',
@@ -16,7 +17,7 @@ const router = new VueRouter({
         {
             path: '/home',
             name: 'home',
-            component: HomePage
+            component: PostsHomepage
         },
         {
             path: '/contacts',
@@ -32,6 +33,11 @@ const router = new VueRouter({
             name: 'posts.show',
             component: SinglePost
         }, 
+        {
+            path : '/tags',
+            name : 'TagsPostsPage',
+            component : TagsPostsPage
+        }
     ]
 })
 export default router

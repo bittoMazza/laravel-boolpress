@@ -12,7 +12,7 @@
                 <router-link class="route-link" to="/contacts">Contatti</router-link>
             </li>
             <li class="mx-2">
-                <router-link class="route-link" to="/about">Tags</router-link>
+                <router-link class="route-link" to="/tags">Tags</router-link>
             </li>
         </ul>
     </nav>

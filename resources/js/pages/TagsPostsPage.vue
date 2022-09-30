@@ -7,7 +7,7 @@
       <div v-else>
           <div>
               <h3 class="text-center py-4"> Tutti i Tag con relativi post e nome utente </h3>
-              <div class="d-flex  justify-content-center flex-wrap">
+              <div class="d-flex justify-content-center flex-wrap">
                  <TagCard v-for="tag in tags" :key="tag.id" :tag="tag"/> 
               </div>
           </div>
@@ -38,6 +38,7 @@
               Axios.get('/api/tags',{
               }).then((response) => {
                   this.tags = response.data.results.data;
+                  this.isLoading = false;
               }).catch((error) => {
                   console.error(error);
               })
