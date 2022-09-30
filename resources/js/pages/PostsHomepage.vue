@@ -28,6 +28,7 @@ import PostCard from '../components/PostCard';
 import TagCard from '../components/TagCard';  
 import LoadingComponent from '../components/LoadingComponent.vue' 
 export default {
+    name:'PostsHomepage',
     components:{
         PostCard,
         TagCard,

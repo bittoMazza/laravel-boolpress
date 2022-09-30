@@ -2157,7 +2157,9 @@ var render = function render() {
     staticClass: "py-4"
   }, [_c("ul", {
     staticClass: "d-flex justify-content-center"
-  }, [_c("li", [_c("router-link", {
+  }, [_c("li", {
+    staticClass: "mx-2"
+  }, [_c("router-link", {
     staticClass: "route-link",
     attrs: {
       to: "/about"
@@ -2169,12 +2171,21 @@ var render = function render() {
     attrs: {
       to: "/home"
     }
-  }, [_vm._v("Home")])], 1), _vm._v(" "), _c("li", [_c("router-link", {
+  }, [_vm._v("Home")])], 1), _vm._v(" "), _c("li", {
+    staticClass: "mx-2"
+  }, [_c("router-link", {
     staticClass: "route-link",
     attrs: {
       to: "/contacts"
     }
-  }, [_vm._v("Contatti")])], 1)])])]);
+  }, [_vm._v("Contatti")])], 1), _vm._v(" "), _c("li", {
+    staticClass: "mx-2"
+  }, [_c("router-link", {
+    staticClass: "route-link",
+    attrs: {
+      to: "/about"
+    }
+  }, [_vm._v("Tags")])], 1)])])]);
 };
 
 var staticRenderFns = [];
