@@ -10,6 +10,7 @@ import ContactsPage from './pages/ContactsPage';
 import PostsHomepage from './pages/PostsHomepage';
 import SinglePost from './pages/SinglePost';
 import TagsPostsPage from './pages/TagsPostsPage';
+import PageNotFound from './pages/errors/PageNotFound';
 
 const router = new VueRouter({
     mode:'history',
@@ -37,6 +38,11 @@ const router = new VueRouter({
             path : '/tags',
             name : 'TagsPostsPage',
             component : TagsPostsPage
+        },
+        {
+            path:'*',
+            name : 'PageNotFound',
+            component : PageNotFound
         }
     ]
 })
