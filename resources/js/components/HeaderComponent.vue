@@ -6,7 +6,7 @@
                 <router-link class="route-link" to="/about">About</router-link>
             </li>
             <li class="mx-2">
-                <router-link class="route-link" to="/home">Home</router-link>
+                <router-link class="route-link" to="/">Home</router-link>
             </li>
             <li class="mx-2">
                 <router-link class="route-link" to="/contacts">Contatti</router-link>

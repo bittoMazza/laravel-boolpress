@@ -30,8 +30,3 @@ Route::middleware('auth')
         Route::resource('/categories' , 'CategoryController');
         Route::resource('/tags','TagController');
     });
-
-/* Tutte le rotte che non sono quelle precedenti,portano a guest.home */
-Route::get("{any?}", function(){
-    return view("guest.home");
-})->where("any", ".*");

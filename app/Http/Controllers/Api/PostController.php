@@ -100,4 +100,9 @@ class PostController extends Controller
     {
         //
     }
+
+    public function deletedPosts(){
+        $posts = Post::onlyTrashed()->paginate(10);
+        return $posts;
+    }
 }
