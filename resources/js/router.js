@@ -12,6 +12,7 @@ import SinglePost from './pages/SinglePost';
 import TagsPostsPage from './pages/TagsPostsPage';
 import PageNotFound from './pages/errors/PageNotFound';
 
+
 const router = new VueRouter({
     mode:'history',
     routes:[
@@ -43,7 +44,7 @@ const router = new VueRouter({
             path:'*',
             name : 'PageNotFound',
             component : PageNotFound
-        }
+        },
     ]
 })
 export default router

@@ -2206,7 +2206,7 @@ var render = function render() {
   }, [_c("router-link", {
     staticClass: "route-link",
     attrs: {
-      to: "/home"
+      to: "/"
     }
   }, [_vm._v("Home")])], 1), _vm._v(" "), _c("li", {
     staticClass: "mx-2"
@@ -2222,7 +2222,14 @@ var render = function render() {
     attrs: {
       to: "/tags"
     }
-  }, [_vm._v("Tags")])], 1)])])]);
+  }, [_vm._v("Tags")])], 1), _vm._v(" "), _c("li", {
+    staticClass: "mx-2"
+  }, [_c("router-link", {
+    staticClass: "route-link",
+    attrs: {
+      to: "/posts/deleted"
+    }
+  }, [_vm._v("Post cancellati")])], 1)])])]);
 };
 
 var staticRenderFns = [];
@@ -19458,7 +19465,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
   routes: [{
-    path: '/home',
+    path: '/',
     name: 'home',
     component: _pages_PostsHomepage__WEBPACK_IMPORTED_MODULE_4__["default"]
   }, {

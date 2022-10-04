@@ -26,7 +26,8 @@ Route::middleware('auth')
     ->prefix('admin')
     ->group(function(){
         Route::get('/', 'HomeController@index')->name('home');
-        Route::resource('/posts', 'PostController');
         Route::resource('/categories' , 'CategoryController');
         Route::resource('/tags','TagController');
+        Route::get('/posts/deleted', 'PostController@deletedPosts')->name('posts.deletePosts');
+        Route::resource('/posts', 'PostController');
     });

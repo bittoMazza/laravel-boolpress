@@ -153,4 +153,9 @@ class PostController extends Controller
         $post->delete();
         return redirect()->route('admin.posts.index')->with('delete',$post->title);
     }
+
+    public function deletedPosts(){
+        $posts = Post::onlyTrashed()->paginate(10);
+        return view('admin.posts.deletePosts',compact('posts'));
+    }
 }
